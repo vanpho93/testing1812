@@ -26,7 +26,7 @@ describe('Test addPromise with async', () => {
         assert.equal(result, 9);
     });
 
-    it.only('Cannot add sth that is not a number', async () => {
+    it('Cannot add sth that is not a number', async () => {
         try {
             const result = await addPromise('x', 5);
             throw new Error('Wrong.');
